@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="main_login">Login</string>
+    <string name="Login_bttn_submit">Login</string>
+    <string name="login_switch_default_text">Teacher</string>
+    <string name="login_registration_text">Have no account, click here to register!</string>
+    <string name="registration_main_text">Registration</string>
+    <string name="admin_registration">Admin_Registration</string>
+    <string name="Teacher_Registration">Teacher Registration</string>
+</resources>

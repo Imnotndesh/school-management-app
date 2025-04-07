@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/registrationLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Switch for selecting registration type -->
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/registration_main_text"
+            android:textAlignment="center"
+            android:textSize="48sp"
+            android:textStyle="bold" />
+
+        <Switch
+            android:id="@+id/switchRegistration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:textOff="@string/admin_registration"
+            android:textOn="@string/Teacher_Registration" />
+
+        <!-- Teacher Registration Fields -->
+        <LinearLayout
+            android:id="@+id/teacherFields"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <!-- Teacher Name -->
+            <EditText
+                android:id="@+id/teacherName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Teacher Name"
+                android:minHeight="48dp" />
+
+            <!-- Email -->
+            <EditText
+                android:id="@+id/teacherEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:minHeight="48dp" />
+
+            <!-- Subjects -->
+            <EditText
+                android:id="@+id/teacherSubjects"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Subjects"
+                android:minHeight="48dp" />
+
+            <!-- Phone -->
+            <EditText
+                android:id="@+id/teacherPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone"
+                android:minHeight="48dp" />
+
+            <!-- Class Name -->
+            <EditText
+                android:id="@+id/teacherClassName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Class Name"
+                android:minHeight="48dp" />
+
+            <!-- Access Username -->
+            <EditText
+                android:id="@+id/teacherUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Username"
+                android:minHeight="48dp" />
+
+            <!-- Access Password -->
+            <EditText
+                android:id="@+id/teacherPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:minHeight="48dp" />
+
+        </LinearLayout>
+
+        <!-- Admin Registration Fields -->
+        <LinearLayout
+            android:id="@+id/adminFields"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <!-- Admin Name -->
+            <EditText
+                android:id="@+id/adminName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Admin Name" />
+
+            <!-- Admin Password -->
+            <EditText
+                android:id="@+id/adminPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Admin Password"
+                android:inputType="textPassword" />
+
+        </LinearLayout>
+
+        <!-- Register Button -->
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register" />
+
+    </LinearLayout>
+</ScrollView>
